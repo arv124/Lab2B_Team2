@@ -18,6 +18,7 @@ public class Lab2B_Team2 {
         // TODO code application logic here
         //Qiu Hi~~
         //Hello
+        //test
     }
     
 }
