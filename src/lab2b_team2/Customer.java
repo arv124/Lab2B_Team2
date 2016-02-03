@@ -18,4 +18,5 @@ public abstract class Customer {
     
     protected abstract int getAccountNumber();
     
+    
 }
