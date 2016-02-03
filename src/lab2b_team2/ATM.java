@@ -11,7 +11,7 @@ package lab2b_team2;
  */
 public class ATM {
     private double atmBalance;
-    private Accounts accountPin;
+    private Accounts accountPin; //not sure whether this is needed?
     
     public void authenticatePIN(Accounts accountPin){
         this.accountPin = accountPin;
@@ -19,7 +19,7 @@ public class ATM {
     public void vendBill(){
         
     }
-    // should this method be double instead of void?
+    // should this method be double instead of void??
     public double getATMBalance(){
         return atmBalance;
     }
@@ -28,6 +28,5 @@ public class ATM {
         atmBalance = rateOfExchange * atmBalance;
         return atmBalance;
     }
-    
-            
+           
 }
