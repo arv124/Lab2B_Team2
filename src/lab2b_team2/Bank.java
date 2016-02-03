@@ -85,7 +85,49 @@ public class Bank {
 
             }
         }
-        
+        if(accountType=='s')
+        {
+            System.out.println("Enter PIN");
+            int pin=in.nextInt();
+            if(pin==savingsAccounts.get(accountNumber).getPIN())
+            {
+                System.out.println("Enter w to withdraw. \n"
+                        + "Enter d to make a deposit. \n"
+                        + "Enter b to get your balance." );
+                char command=in.next().charAt(0);
+                if(command=='w')
+                {
+                    System.out.println("Enter amount to withdraw");
+                    double withdraw=in.nextDouble();
+                    savingsAccounts.get(accountNumber).withdraw(withdraw);
+                    double balance=savingsAccounts.get(accountNumber).getBalance();
+                    if(balance<0)
+                    {
+                        savingsAccounts.get(accountNumber).depositCurrency(withdraw);
+                        System.out.println("Withdraw amount exceeds balance. Withdraw unsuccessful.");
+                    }
+                    System.out.println("Your balance is now: $"+balance);
+                }
+                else if (command=='d')
+                {
+                    System.out.println("Enter amount to deposit");
+                    double deposit=in.nextDouble();
+                    savingsAccounts.get(accountNumber).depositCurrency(deposit);
+                    double balance=savingsAccounts.get(accountNumber).getBalance();
+                    System.out.println("Your Balance is now: $"+balance);
+                }
+                else if (command=='b')
+                {
+                    double balance=savingsAccounts.get(accountNumber).getBalance();
+                    System.out.println("Your balance is : $"+balance);
+                }
+                else
+                {
+                    System.out.println("invalid command");////////////////////////loop to the begining
+                }
+
+            }
+        }
         //what would you like to 
         //
     }
