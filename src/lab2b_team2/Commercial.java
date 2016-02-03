@@ -20,9 +20,10 @@ public class Commercial extends Customer {
     public String getBusinessName(){
         return businessName;
     }
+    
     @Override
-    protected int getAccountNumber() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public int getAccountNumber() {
+        return accountNum;
     }
     
 }
