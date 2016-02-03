@@ -9,7 +9,7 @@ package lab2b_team2;
  *
  * @author arv124
  */
-public class Lab2B_Team2 {
+public class Bank {
 
     /**
      * @param args the command line arguments

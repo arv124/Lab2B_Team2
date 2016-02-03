@@ -9,6 +9,13 @@ package lab2b_team2;
  *
  * @author Alex
  */
-public class Customer {
+public abstract class Customer {
+    protected int accountNum;
+    
+    public Customer(int accountNum){
+        this.accountNum = accountNum;
+    }
+    
+    protected abstract int getAccountNumber();
     
 }

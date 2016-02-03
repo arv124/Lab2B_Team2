@@ -9,6 +9,25 @@ package lab2b_team2;
  *
  * @author Alex
  */
-public class Personal {
+public class Personal extends Customer {
+    public String firstName;
+    public String lastName;
+    
+    public Personal(int accountNum, String firstName, String lastName){
+        super(accountNum);
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+    public String getFirstName(){
+        return firstName;
+    }
+    public String getLastName(){
+        return lastName;
+    }
+    @Override
+    public int getAccountNumber(){
+        return accountNum;
+    }
+    
     
 }

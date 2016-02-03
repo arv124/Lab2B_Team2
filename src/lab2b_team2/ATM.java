@@ -10,5 +10,24 @@ package lab2b_team2;
  * @author Alex
  */
 public class ATM {
+    private double atmBalance;
+    private Accounts accountPin;
     
+    public void authenticatePIN(Accounts accountPin){
+        this.accountPin = accountPin;
+    }
+    public void vendBill(){
+        
+    }
+    // should this method be double instead of void?
+    public double getATMBalance(){
+        return atmBalance;
+    }
+    public double convert(double atmBalance, double rateOfExchange){
+        this.atmBalance = atmBalance;
+        atmBalance = rateOfExchange * atmBalance;
+        return atmBalance;
+    }
+    
+            
 }
