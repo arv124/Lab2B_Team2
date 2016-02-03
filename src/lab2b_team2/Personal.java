@@ -18,12 +18,15 @@ public class Personal extends Customer {
         this.firstName = firstName;
         this.lastName = lastName;
     }
+    
     public String getFirstName(){
         return firstName;
     }
+    
     public String getLastName(){
         return lastName;
     }
+    
     @Override
     public int getAccountNumber(){
         return accountNum;
