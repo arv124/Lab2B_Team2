@@ -11,10 +11,13 @@ package lab2b_team2;
  */
 public class ATM {
     private double atmBalance;
-    private Accounts accountPin; //not sure whether this is needed?
+    private int accountPin; //not sure whether this is needed?
     
-    public void authenticatePIN(Accounts accountPin){
+    public void authenticatePIN(int accountPin, Checking c){
         this.accountPin = accountPin;
+        if(accountPin == c.getPIN()){
+            System.out.println("You have been authenticated!");
+        }
     }
     public void vendBill(){
         
@@ -23,7 +26,7 @@ public class ATM {
     public double getATMBalance(){
         return atmBalance;
     }
-    public double convert(double atmBalance, double rateOfExchange){
+    public double convert(double atmBalance, Currency c){
         this.atmBalance = atmBalance;
         atmBalance = rateOfExchange * atmBalance;
         return atmBalance;

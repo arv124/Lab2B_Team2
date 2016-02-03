@@ -19,6 +19,7 @@ public class Currency {
     final private double QUARTER = 0.25;
     //bills (Clinton, Cosby, Nye etc.)
     final private double ONE = 1.00;
+    final private double FIVE = 5.00;
     final private double TEN = 10.00;
     final private double TWENTY = 20.00;
     final private double FIFTY = 50.00;
@@ -52,6 +53,11 @@ public class Currency {
     public double getOne()
     {
     return ONE;
+    }
+    
+    public double getFive()
+    {
+        return FIVE;
     }
     
     public double getTen()
