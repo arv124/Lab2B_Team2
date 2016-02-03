@@ -26,7 +26,7 @@ public class Checking extends Accounts{
     }
     
     public void depositCheck(Checks c){
-        balance = balance + c.balance;
+        balance = balance + c.amount;
     }
     
     @Override
