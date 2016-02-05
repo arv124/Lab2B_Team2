@@ -31,6 +31,4 @@ public class Personal extends Customer {
     public int getAccountNumber(){
         return accountNum;
     }
-    
-    
 }
