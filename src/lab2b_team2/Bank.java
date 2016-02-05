@@ -163,6 +163,7 @@ public class Bank {
                     Savings newAccount=new Savings(0.0,(savingsAccounts.size()+1),pin,newPersonalCustomer,.01);
                     savingsAccounts.add(newAccount);
                 }
+                System.out.println("Personal Account Created");
             }
             else if(customerType=='c')
             {
@@ -184,7 +185,8 @@ public class Bank {
                     newCommercialCustomer.setAccountNumber(savingsAccounts.size()+1);
                     Savings newAccount=new Savings(0.0,(savingsAccounts.size()+1),pin,newCommercialCustomer,.01);
                     savingsAccounts.add(newAccount);
-                }                
+                }  
+                System.out.println("Commercial Account Created.");
             }
         }
 

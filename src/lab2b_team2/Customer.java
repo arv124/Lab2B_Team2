@@ -17,5 +17,7 @@ public abstract class Customer {
     }
     
     protected abstract int getAccountNumber();
-    
+    public void setAccountNumber(int newAccounNumber){
+        this.accountNum=newAccounNumber;
+    }
 }
