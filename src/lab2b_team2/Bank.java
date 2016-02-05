@@ -44,7 +44,6 @@ public class Bank {
                 accountExists=true;
             }
         }
-        //////////////////////////////////////////////////////////////////////////if accoun number is not found, loop to beginning
         if(accountExists==true)
         {
             if(accountType=='c')
@@ -85,7 +84,7 @@ public class Bank {
                     }
                     else
                     {
-                        System.out.println("invalid command");////////////////////////loop to the begining
+                        System.out.println("invalid command");
                     }
 
                 }
@@ -128,7 +127,7 @@ public class Bank {
                     }
                     else
                     {
-                        System.out.println("invalid command");////////////////////////loop to the begining
+                        System.out.println("invalid command");
                     }
 
                 }
